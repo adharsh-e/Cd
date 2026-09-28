@@ -1,0 +1,26 @@
+List of Experiments 
+1. Implementation of symbol table.
+2. Develop a lexical analyzer to recognize a few patterns inc (ex. Identifiers, 
+constants, comments, operators etc.)
+3. Implementation of lexical analyzer using lex tool.
+4. Generate yacc specification for a few syntactic categories.
+a) Program to recognize a valid arithmetic expression that uses operator +,-, * and /.
+b) Program to recognize a valid variable which starts with a letter 
+followed by any number of letter or digits.
+c) Implementation of calculator using lex and yacc.
+5. Convert the bnf rules into yacc form and write code to generate abstract syntax tree.
+6. Implement type checking
+7. Implement any one storage allocation strategies (heap, stack, static)
+8. Write a lex program to count the number of words and number of lines in a given file 
+or program.
+9. Write a ‘C’ program to implement lexical analyzer using c program.
+10. Write recursive descent parser for the grammar E->E+T E-
+>T T->T*F T->F F->(E)/id.
+11. Write recursive descent parser for the grammar 
+S->(L)
+S->a L->L,S L->S 
+12. Write a C program to calculate first function for 
+the grammar E->E+T E->T T->T*F T->F
+ F->(E)/id
+13. Write a YACC program to implement a top down parser for the given grammar.
+14. Write a YACC program to evaluate algebraic expression.
