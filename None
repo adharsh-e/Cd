@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int main()
+{
+    char b[50], c;
+    int i = 0;
+
+    printf("Enter expression terminated by $: ");
+
+    while ((c = getchar()) != '$')
+        b[i++] = c;
+
+    b[i] = '\0';
+
+    printf("\nSymbol Table\n");
+    printf("Symbol\tType\n");
+
+    for (i = 0; b[i] != '\0'; i++)
+    {
+        if (isalpha(b[i]))
+            printf("%c\tIdentifier\n", b[i]);
+
+        else if (b[i] == '+' || b[i] == '-' ||
+                 b[i] == '*' || b[i] == '=')
+            printf("%c\tOperator\n", b[i]);
+    }
+
+    return 0;
+}
